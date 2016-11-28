@@ -3,9 +3,10 @@
 
 ###使用
 切换到需要输出的目录下
-sh export_img_assets.sh  -o 输出目录 -n 输出名称"
-
-###结果
+```ruby
+sh export_img_assets.sh  -o 输出目录 -n 输出名称
+```
+###输出结果
 
 ####h文件
 ```ruby
