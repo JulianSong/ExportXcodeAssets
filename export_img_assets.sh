@@ -43,14 +43,19 @@ output_m_file_Path=${output_path}"/"${output_name}".m"
 echo ${output_h_file_Path}
 echo ${output_m_file_Path}
 #输出h文件头部
-function outputHeader()
+function outputHeader
 {
+  echo "//
+//  ${output_name}.h
+//
+//
+" >> ${output_h_file_Path}
 	echo "#import <Foundation/Foundation.h>" >> ${output_h_file_Path}
 	echo "@interface ${output_name} : NSObject" >> ${output_h_file_Path}
 }
 
 #输出h文件内容
-function outputImageset()
+function outputImageset
 {
 	for subdir in `ls .`
 	 do
@@ -71,15 +76,20 @@ function outputImageset()
 }
 
 #输出h文件尾部
-function outputEnd()
+function outputEnd
 {
 	echo "@end"  >> ${output_h_file_Path}
 }
 
 #输出n文件尾部
-function outputMFile()
+function outputMFile
 {
-	echo "#import \"${output_name}.h\"
+    echo "//
+//  ${output_name}.h
+//
+//" >> ${output_m_file_Path}
+	echo "
+#import \"${output_name}.h\"
 #import <objc/runtime.h>
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored \"-Wincomplete-implementation\"
