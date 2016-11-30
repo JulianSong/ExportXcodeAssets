@@ -47,7 +47,7 @@ function outputHeader
 {
   echo "//
 //  ${output_name}.h
-//
+//  Do not edit generate automatically
 //
 " >> ${output_h_file_Path}
 	echo "#import <Foundation/Foundation.h>" >> ${output_h_file_Path}
@@ -86,7 +86,7 @@ function outputMFile
 {
     echo "//
 //  ${output_name}.h
-//
+//  Do not edit generate automatically
 //" >> ${output_m_file_Path}
 	echo "
 #import \"${output_name}.h\"
