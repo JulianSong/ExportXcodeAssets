@@ -3,9 +3,10 @@
 
 ###使用
 切换到需要输出的目录下
-sh export_img_assets.sh  -o 输出目录 -n 输出名称"
-
-###结果
+```ruby
+sh export_img_assets.sh  -o 输出目录 -n 输出名称
+```
+###输出结果
 
 ####h文件
 ```ruby
@@ -63,6 +64,7 @@ NSString * dynamicMethodIMP(id self, SEL _cmd)
 @end
 #pragma clang diagnostic pop
 ```
+<<<<<<< HEAD
 
 ####如何使用
 ```ruby
@@ -81,3 +83,5 @@ UIImage *img = [UIImage imageWithNamed:[JL_R icon_phone]];
 <img src="https://github.com/JulianSong/ExportXcodeAssets/blob/master/screenshots/2.png" width="400" height="166" />
 * 选择 Aggregate Targert 然后运行，生成或更新文件。
 
+=======
+>>>>>>> a85b0b4c330ce961eff36aa02ed0602422c044de
