@@ -71,13 +71,13 @@ UIImage *img = [UIImage imageWithNamed:[JL_R icon_phone]];
 ```
 
 ####使用Aggregate
-* 使用Xcode 新建Targe	t 选中 “Aggregate”
+* 使用Xcode 新建Target 选中 “Aggregate”
 
 例如
 
 <img src="https://github.com/JulianSong/ExportXcodeAssets/blob/master/screenshot/1.png" width="400" height="284" />
 
-* 完成创建后在 Aggregate Targert 新建run script 输入以下下代码
+* 完成创建后在 Aggregate Target 新建run script 输入以下下代码
 ```ruby
 	 sh  存储目录/ExportXcodeAssets/export_img_assets.sh -o 输出目录 -n 文件名
 ```
@@ -85,4 +85,4 @@ UIImage *img = [UIImage imageWithNamed:[JL_R icon_phone]];
 例如
 
 <img src="https://github.com/JulianSong/ExportXcodeAssets/blob/master/screenshot/2.png" width="400" height="166" />
-* 选择 Aggregate Targert 然后运行，生成或更新文件。
+* 选择 Aggregate Target 然后运行，生成或更新文件。
